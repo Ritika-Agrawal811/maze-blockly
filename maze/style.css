@@ -178,6 +178,11 @@ html[dir="RTL"] #pegmanButton > span {
   #blockly {
     left: 0 !important;
     top: 150vw !important;
+    width: 100vw;
+  }
+
+  #blockly svg {
+    width: 100%;
   }
 
   #visualization {
