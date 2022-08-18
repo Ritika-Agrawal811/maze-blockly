@@ -182,7 +182,7 @@ html[dir="RTL"] #pegmanButton > span {
     height: 500px;
   }
 
-  #blockly svg {
+  #blockly svg:nth-child(1) {
     width: 100%;
     height: 100%;
   }
