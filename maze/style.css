@@ -177,9 +177,9 @@ html[dir="RTL"] #pegmanButton > span {
 
   #blockly {
     left: 0 !important;
-    top: 150vw !important;
     width: 100vw;
     height: 500px;
+    position: relative;
   }
 
   #blockly svg:nth-child(1) {
