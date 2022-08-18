@@ -1,0 +1,199 @@
+#blockly {
+  position: fixed;
+  bottom: 1em;
+}
+#visualization {
+  position: relative;
+}
+
+#capacityBubble {
+  position: absolute;
+  margin-top: -0.5em;
+  left: 1em;
+  top: 23.4375em;
+  width: 23.75em;
+}
+html[dir="RTL"] #capacityBubble {
+  left: auto;
+  right: 1em;
+}
+#capacity {
+  display: none;
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  background-color: rgba(64, 64, 64, 0.7);
+  font-size: large;
+}
+.capacityNumber {
+  font-weight: bold;
+}
+#sampleOneTopBlock {
+  height: 5em;
+  width: 15.625em;
+}
+#pegSpin {
+  height: 3.125em;
+  width: 3.125em;
+  background-position: -21.4375em 0;
+  margin-top: 1em;
+  position: absolute;
+}
+html[dir="RTL"] #pegSpin {
+  background-position: -441px 0;
+}
+
+.helpMenuFake {
+  border-radius: 0.5em;
+  background-color: #bfcdde;
+  color: #000;
+  padding: 0 0.5em;
+  cursor: default;
+}
+img[src$="help_up.png"] {
+  margin: -2em 1em 0;
+  height: 4em;
+  width: 1.5em;
+}
+img[src$="help_down.png"] {
+  margin: 0 1em -2em;
+  height: 4em;
+  width: 1.5em;
+}
+
+#svgMaze {
+  overflow: hidden;
+}
+
+/* 'Look' icon */
+#look > path {
+  display: none;
+  fill: none;
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-opacity: 0.7;
+}
+
+/* Buttons */
+button.primary {
+  /* Can't use "text-align: start" due to IE. */
+  text-align: left;
+}
+html[dir="RTL"] button.primary {
+  text-align: right;
+}
+
+/* Sprited icons. */
+.icon21 {
+  height: 1.3125em;
+  width: 1.3125em;
+  background-image: url(icons.png);
+}
+.link {
+  background-position: 0 0;
+}
+.run {
+  background-position: 0 -1.3125em;
+}
+.stop {
+  background-position: -1.3125em -1.3125em;
+}
+
+#pegmanButton {
+  padding: 0;
+  position: relative;
+}
+#pegmanButton:active {
+  border: 1px solid #ddd !important;
+}
+#pegmanButton > img {
+  margin-left: -0.5em;
+  margin-right: 0.5em;
+  height: 2.375em;
+  width: 3.0625em;
+  background-position: -61.25em 0;
+  opacity: 0.8;
+  font-size: 16px;
+}
+html[dir="RTL"] #pegmanButton > img {
+  margin-left: 0.25em;
+  margin-right: -0.25em;
+}
+#pegmanButton > span {
+  position: absolute;
+  top: 0.5em;
+  margin-left: -1em;
+}
+html[dir="RTL"] #pegmanButton > span {
+  margin-right: -1em;
+}
+#pegmanMenu {
+  border: 1px solid #ddd;
+  border-radius: 0.5em;
+  box-shadow: 2px 2px 0.5em #888;
+  display: none;
+  position: absolute;
+  font-size: 16px;
+}
+#pegmanMenu > div {
+  background-color: #fff;
+}
+#pegmanMenu > div:hover {
+  background-color: #57e;
+}
+#pegmanMenu > div > img {
+  height: 2.375em;
+  width: 3.0625em;
+  background-position: -61.25em 0;
+}
+
+.button-row {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#runButton {
+  display: flex;
+  align-items: center;
+}
+
+#runButton img {
+  margin-top: 0.25em;
+}
+
+.level-group {
+  display: inline;
+}
+
+@media (max-width: 424px) {
+  html {
+    font-size: 10px;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #blockly {
+    left: 0 !important;
+    top: 150vw !important;
+  }
+
+  #visualization {
+    width: 95vw;
+    height: 95vw;
+    margin: 1em 0;
+  }
+
+  #visualization svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .level-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
